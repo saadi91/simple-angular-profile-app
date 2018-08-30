@@ -1,0 +1,8 @@
+<h3>Profiles Page</h3>
+<ul>
+<li *ngFor="let profile of profiles">
+  <h3>{{profile.title}}</h3>
+  <p>{{profile.excerpt}}</p>
+  <a (click)="singleProfile(profile.id)">Read More</a>
+</li>
+</ul>
